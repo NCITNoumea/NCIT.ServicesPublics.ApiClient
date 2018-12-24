@@ -7,7 +7,7 @@ namespace NCIT.ServicesPublics.ApiClient.Constants
         /// <summary>
         /// Default api version : v1.0
         /// </summary>
-        public static readonly string DEFAULT = "v1.0";
+        public static readonly string Default = "v1.0";
 
         /// <summary>
         /// Api version v1.0

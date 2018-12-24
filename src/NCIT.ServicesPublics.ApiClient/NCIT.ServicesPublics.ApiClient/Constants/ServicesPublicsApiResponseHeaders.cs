@@ -2,6 +2,6 @@
 {
     public static class ServicesPublicsApiResponseHeaders
     {
-        public static readonly string ETAG = "ETag";
+        public static readonly string Etag = "ETag";
     }
 }

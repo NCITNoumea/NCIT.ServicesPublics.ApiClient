@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
 namespace NCIT.ServicesPublics.ApiClient.Exceptions
 {
@@ -13,22 +12,22 @@ namespace NCIT.ServicesPublics.ApiClient.Exceptions
         {
         }
 
-        /// <summary>
-        /// Initialize new instance of <see cref="InvalidApiVersionException"/>
-        /// </summary>
-        /// <param name="message">Exception message</param>
-        public InvalidApiVersionException(string message) : base(message)
-        {
-        }
+        ///// <summary>
+        ///// Initialize new instance of <see cref="InvalidApiVersionException"/>
+        ///// </summary>
+        ///// <param name="message">Exception message</param>
+        //public InvalidApiVersionException(string message) : base(message)
+        //{
+        //}
 
-        /// <summary>
-        /// Initialize new instance of <see cref="InvalidApiVersionException"/>
-        /// </summary>
-        /// <param name="message">Exception message</param>
-        /// <param name="innerException">Inner exception</param>
-        public InvalidApiVersionException(string message, Exception innerException) : 
-            base(message, innerException)
-        {
-        }
+        ///// <summary>
+        ///// Initialize new instance of <see cref="InvalidApiVersionException"/>
+        ///// </summary>
+        ///// <param name="message">Exception message</param>
+        ///// <param name="innerException">Inner exception</param>
+        //public InvalidApiVersionException(string message, Exception innerException) : 
+        //    base(message, innerException)
+        //{
+        //}
     }
 }

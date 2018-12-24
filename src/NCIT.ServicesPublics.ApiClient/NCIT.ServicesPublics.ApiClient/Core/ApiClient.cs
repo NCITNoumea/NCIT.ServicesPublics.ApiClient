@@ -22,7 +22,7 @@ namespace NCIT.ServicesPublics.ApiClient.Core
         public ApiClient(string accessToken)
         {
             SetAccessToken(accessToken);
-            SetApiVersion(ServicesPublicsApiVersions.DEFAULT);
+            SetApiVersion(ServicesPublicsApiVersions.Default);
         }
 
         /// <summary>

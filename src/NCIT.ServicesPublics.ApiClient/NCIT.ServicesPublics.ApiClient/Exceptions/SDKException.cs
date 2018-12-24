@@ -8,12 +8,12 @@ namespace NCIT.ServicesPublics.ApiClient.Exceptions
     /// Represents error in SDK while deserializing API response.
     /// </summary>
     [Serializable]
-    public class SdkException : Exception
+    internal class SdkException : Exception
     {
         /// <summary>
         /// Content of api responce as string
         /// </summary>
-        public string ApiResponseContent { get; private set; }
+        public string ApiResponseContent { get; }
 
         /// <summary>
         /// Initialize new instance of <see cref="SdkException"/>

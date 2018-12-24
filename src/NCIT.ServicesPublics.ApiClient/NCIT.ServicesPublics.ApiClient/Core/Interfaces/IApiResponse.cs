@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NCIT.ServicesPublics.ApiClient.Interfaces
+namespace NCIT.ServicesPublics.ApiClient.Core.Interfaces
 {
     /// <summary>
     /// Represents response received from api

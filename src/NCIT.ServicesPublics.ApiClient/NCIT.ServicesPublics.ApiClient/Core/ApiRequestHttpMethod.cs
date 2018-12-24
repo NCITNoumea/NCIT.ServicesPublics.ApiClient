@@ -2,8 +2,8 @@
 {
     public enum ApiRequestHttpMethod
     {
-        GET,
-        POST,
-        DELETE,
+        Get,
+        Post,
+        Delete,
     }
 }

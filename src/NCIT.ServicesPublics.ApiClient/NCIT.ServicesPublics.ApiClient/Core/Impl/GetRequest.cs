@@ -1,14 +1,14 @@
 ﻿using System.Threading.Tasks;
+using NCIT.ServicesPublics.ApiClient.Core.Interfaces;
 using NCIT.ServicesPublics.ApiClient.Exceptions;
-using NCIT.ServicesPublics.ApiClient.Interfaces;
 using Newtonsoft.Json.Linq;
 
-namespace NCIT.ServicesPublics.ApiClient.Core
+namespace NCIT.ServicesPublics.ApiClient.Core.Impl
 {
     /// <inheritdoc cref="IGetRequest" />
     public class GetRequest : ApiRequest, IGetRequest
     {
-        internal GetRequest(string requestUrl, ApiClient client) : base(requestUrl, client, ApiRequestHttpMethod.GET)
+        internal GetRequest(string requestUrl, ApiClient client) : base(requestUrl, client, ApiRequestHttpMethod.Get)
         {
         }
 
@@ -74,5 +74,5 @@ namespace NCIT.ServicesPublics.ApiClient.Core
 
             return new ApiResponse<string>(response.Content, response.Headers, GetExceptionsFromResponse(response));
         }
-}
+    }
 }

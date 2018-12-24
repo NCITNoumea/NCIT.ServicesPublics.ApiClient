@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NCIT.ServicesPublics.ApiClient.Interfaces
+namespace NCIT.ServicesPublics.ApiClient.Core.Interfaces
 {
     public interface IApiRequest
     {

@@ -2,26 +2,26 @@
 {
     internal static class ServicesPublicsApiRequestUrls
     {
-        internal const string BASE_REQUEST_BASE_URL = "https://service-public.nc/api/{api_version}/";
+        internal const string BaseRequestBaseUrl = "https://service-public.nc/api/{api_version}/";
 
         /// <summary>
         /// Base url for 'dossiers' endpoint.
         /// </summary>
-        public static string DOSSIERS_REQUEST_BASE_URL = BASE_REQUEST_BASE_URL + "dossiers";
+        public static string DossiersRequestBaseUrl = BaseRequestBaseUrl + "dossiers";
 
         /// <summary>
         /// Base url for 'téléservices' endpoint.
         /// </summary>
-        public static string TELESERVICES_REQUEST_BASE_URL = BASE_REQUEST_BASE_URL + "teleservices";
+        public static string TeleservicesRequestBaseUrl = BaseRequestBaseUrl + "teleservices";
 
         /// <summary>
         /// Base url for 'contacts' endpoint.
         /// </summary>
-        public static string CONTACTS_REQUEST_BASE_URL = BASE_REQUEST_BASE_URL + "contacts";
+        public static string ContactsRequestBaseUrl = BaseRequestBaseUrl + "contacts";
 
         /// <summary>
         /// Base url for 'contacts' endpoint.
         /// </summary>
-        public static string FAQS_REQUEST_BASE_URL = BASE_REQUEST_BASE_URL + "faqs";
+        public static string FaqsRequestBaseUrl = BaseRequestBaseUrl + "faqs";
     }
 }

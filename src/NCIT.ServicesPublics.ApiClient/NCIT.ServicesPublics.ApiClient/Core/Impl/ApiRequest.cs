@@ -4,13 +4,13 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Net;
 using NCIT.ServicesPublics.ApiClient.Constants;
+using NCIT.ServicesPublics.ApiClient.Core.Interfaces;
 using NCIT.ServicesPublics.ApiClient.Exceptions;
-using NCIT.ServicesPublics.ApiClient.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 
-namespace NCIT.ServicesPublics.ApiClient.Core
+namespace NCIT.ServicesPublics.ApiClient.Core.Impl
 {
     /// <inheritdoc />
     /// <summary>
@@ -60,7 +60,7 @@ namespace NCIT.ServicesPublics.ApiClient.Core
             RequestUrl = requestUrl;
             Client = client;
 
-            RestClient = new RestClient(ServicesPublicsApiRequestUrls.BASE_REQUEST_BASE_URL);
+            RestClient = new RestClient(ServicesPublicsApiRequestUrls.BaseRequestBaseUrl);
             RestRequest = new RestRequest(requestUrl, (Method)method);
 
             SetRequestParameters();
@@ -108,7 +108,7 @@ namespace NCIT.ServicesPublics.ApiClient.Core
 
         private void SetRequestParameters()
         {
-            RestRequest.AddParameter(ServicesPublicsApiRequestParameters.ACCESS_TOKEN, Client.AccessToken,
+            RestRequest.AddParameter(ServicesPublicsApiRequestParameters.AccessToken, Client.AccessToken,
                 ParameterType.QueryString);
         }
 

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace NCIT.ServicesPublics.ApiClient.Interfaces
+namespace NCIT.ServicesPublics.ApiClient.Core.Interfaces
 {
     public interface IGetRequest : IApiRequest
     {

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using NCIT.ServicesPublics.ApiClient.Interfaces;
+using NCIT.ServicesPublics.ApiClient.Core.Interfaces;
 
 namespace NCIT.ServicesPublics.ApiClient.Core
 {

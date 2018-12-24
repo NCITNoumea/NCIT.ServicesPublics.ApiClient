@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using NCIT.ServicesPublics.ApiClient.Constants;
-using NCIT.ServicesPublics.ApiClient.Interfaces;
+using NCIT.ServicesPublics.ApiClient.Core.Interfaces;
 using RestSharp;
 
 namespace NCIT.ServicesPublics.ApiClient.Core
@@ -43,7 +43,7 @@ namespace NCIT.ServicesPublics.ApiClient.Core
 
         private void SetValuesFromResponceHeaders(IList<Parameter> headerParameters)
         {
-            var tempParameter = headerParameters.FirstOrDefault(e => e.Name.Equals(ServicesPublicsApiResponseHeaders.ETAG));
+            var tempParameter = headerParameters.FirstOrDefault(e => e.Name.Equals(ServicesPublicsApiResponseHeaders.Etag));
             if (tempParameter != null)
                 ETag = tempParameter.Value.ToString();
         }
@@ -59,5 +59,5 @@ namespace NCIT.ServicesPublics.ApiClient.Core
         {
             return _exceptions;
         }
-}
+    }
 }

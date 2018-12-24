@@ -8,6 +8,6 @@
         /// <summary>
         /// HttpRequest parameter name for access token.
         /// </summary>
-        public static string ACCESS_TOKEN = "access_token";
+        public static string AccessToken = "access_token";
     }
 }
